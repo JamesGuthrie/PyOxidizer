@@ -39,6 +39,7 @@ pub fn directory_to_id(prefix: &str, path: &Path) -> String {
             .replace('\\', "/")
             .replace('/', ".")
             .replace('-', "_")
+            .replace('@', "_")
     )
 }
 
